@@ -17,9 +17,9 @@
 5. Go back to `Settings` home page and near the bottom of the list, you should see `System`. 
 6. Under `System` near the bottom of the list tap `Developer options.`
 7. Without scrolling down, you should see an `OEM unlocking` option. Enable it. For security purposes, it may ask you to input your lock screen PIN/password if you have one set.
-![]()
+![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-3.jpg)
 9. Scroll down a bit until you see `USB debugging`. Enable it.
-![]()
+![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-4.jpg)
 10. Plug in your Pixel 3 into your PC using a USB to UsC-C data cable. Change the USB mode to “file transfer (MTP)” mode. Some OEMs may or may not require this, but it's best to just leave it in this mode for general compatibility. 
 
 ---
