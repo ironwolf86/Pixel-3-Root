@@ -1,6 +1,6 @@
 # Pixel-3-(blueline)-Root
 
-Prerequisites:
+- Prerequisites:
     - [Latest SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads) - if Platform Tools is out of date, you WILL run into problems!
     - [Google USB Driver installed](https://developer.android.com/studio/run/win-usb)
     - [Pixel 3 Factory Image (SP1A.210812.016.C1)](https://dl.google.com/dl/android/aosp/blueline-sp1a.210812.016.c1-factory-b41403db.zip)
