@@ -77,8 +77,12 @@ Congratulations, your Google Pixel 3 now has an unlocked bootloader! You'll see 
 
 ---
 
-1. 
+## Part 2 - Rooting the Google Pixel 3 with Magisk
 
+With an unlocked bootloader, you can now boot modified boot images. For Magisk to work, you'll need to patch the Pixel 3's boot image. The easiest way to do this is to install a custom recovery like TWRP to your device so you can use the Magisk installer script.
+
+1. Since your device has been wiped, you'll need to go back and re-enable Developer Options and then re-enable USB Debugging. Make sure your Pixel 3 is still recognized by your PC.
+2. 
 
 
 
