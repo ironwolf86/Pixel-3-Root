@@ -48,25 +48,28 @@ If everything was successful, you should now see your device's serial number in 
 
 7. Now, reboot to the bootloader menu. You can either do this by holding the power and volume down buttons while booting up, or by entering the following ADB command:
 ```
-adb reboot bootloader
+adb.exe reboot bootloader
 ```
 8. Windows Update (Check for updates) > Advanced Options > Optional Updates. Install `LeMobile - Other hardware - Android Bootloader Interface`. Restart Windows.
 9. Turn phone on by pressing power button with the appropiate selection on bootloader screen. Ensure adb debugging is enabled once again and the device shows up after using `adb.exe devices`. Enther the following command to reboot into EDL mode:
 ```
 adb.exe reboot edl
 ```
-10. Windows Update (Check for updates) > Advanced Options > Optional Updates. Install `Qualcomm Incorporated - Ports - 3/25/2016 12:00:00 AM - 2.1.2.2`
-
-11. Once you're on the bootloader menu, you'll now have to switch to using fastboot command to communicate with your device. To unlock the Pixel 3's bootloader, enter the following command:
+10. Restart phone. Windows Update (Check for updates) > Advanced Options > Optional Updates. Install `Qualcomm Incorporated - Ports - 3/25/2016 12:00:00 AM - 2.1.2.2`. Restart Windows.
+11. Ensure adb debugging is enabled once again and the device shows up after using `adb.exe devices`. Enther the following command to reboot to bootloader:
 ```
-fastboot flashing unlock     
+adb.exe reboot bootloader
 ```
-11. You should now see text on screen warning you about the potential risks of unlocking the bootloader. On the screen next to the power and volume buttons, you should see some text. Press the volume up key until it says "unlock the bootloader." Once it says this, press the power button.
+12. Once you're on the bootloader menu, you'll now have to switch to using fastboot command to communicate with your device. To unlock the Pixel 3's bootloader, enter the following command:
+```
+fastboot.exe flashing unlock     
+```
+13. You should now see text on screen warning you about the potential risks of unlocking the bootloader. On the screen next to the power and volume buttons, you should see some text. Press the volume up key until it says "unlock the bootloader." Once it says this, press the power button.
 
 ![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Unlock-Google-Pixel-3-Bootloader-768x1024.jpg)
 
-12. The phone will unlock the bootloader and reboot back to the bootloader menu. This time, the bootloader will show a red warning icon and "unlocked" text.
-13. Now, reboot your phone back to the Android 12 OS. You can do this by sending the following fastboot command:
+14. The phone will unlock the bootloader and reboot back to the bootloader menu. This time, the bootloader will show a red warning icon and "unlocked" text.
+15. Now, reboot your phone back to the Android 12 OS. You can do this by sending the following fastboot command:
 ```
 fastboot reboot
 ```
