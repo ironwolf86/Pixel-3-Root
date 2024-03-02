@@ -13,11 +13,12 @@
 1. Open the `Settings` app.
 2. Go to `About phone`.
 3. Scroll down and tap on `Build number` 7 times until it says you're now a developer.
-4. Go back to `Settings` home page and near the bottom of the list, you should see `System`. 
-5. Under `System` near the bottom of the list tap `Developer options.`
-6. Without scrolling down, you should see an `OEM unlocking` option. Enable it. For security purposes, it may ask you to input your lock screen PIN/password if you have one set.
-7. Scroll down a bit until you see `USB debugging`. Enable it.
-8. Plug in your Pixel 3 into your PC using a USB to UsC-C data cable. Change the USB mode to “file transfer (MTP)” mode. Some OEMs may or may not require this, but it's best to just leave it in this mode for general compatibility. 
+![]()
+5. Go back to `Settings` home page and near the bottom of the list, you should see `System`. 
+6. Under `System` near the bottom of the list tap `Developer options.`
+7. Without scrolling down, you should see an `OEM unlocking` option. Enable it. For security purposes, it may ask you to input your lock screen PIN/password if you have one set.
+8. Scroll down a bit until you see `USB debugging`. Enable it.
+9. Plug in your Pixel 3 into your PC using a USB to UsC-C data cable. Change the USB mode to “file transfer (MTP)” mode. Some OEMs may or may not require this, but it's best to just leave it in this mode for general compatibility. 
 
 ---
 
@@ -46,13 +47,13 @@ adb reboot bootloader
 fastboot flashing unlock     
 ```
 9. You should now see text on screen warning you about the potential risks of unlocking the bootloader. On the screen next to the power and volume buttons, you should see some text. Press the volume up key until it says "unlock the bootloader." Once it says this, press the power button.
-![]()
+![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Unlock-Google-Pixel-3-Bootloader-768x1024.jpg)
 10. The phone will unlock the bootloader and reboot back to the bootloader menu. This time, the bootloader will show a red warning icon and "unlocked" text.
-11. Now, reboot your phone back to the Android 9 Pie OS. You can do this by sending the following fastboot command:
+11. Now, reboot your phone back to the Android 12 OS. You can do this by sending the following fastboot command:
 ```
 fastboot reboot
 ```
-Congratulations, your Google Pixel 3 or Google Pixel 3 XL now has an unlocked bootloader! You'll see a warning message that your phone's bootloader is unlocked on every boot, but don't worry about that as it doesn't affect your day-to-day use. 
+Congratulations, your Google Pixel 3 now has an unlocked bootloader! You'll see a warning message that your phone's bootloader is unlocked on every boot, but don't worry about that as it doesn't affect your day-to-day use. 
 
 ---
 
