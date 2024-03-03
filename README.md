@@ -102,7 +102,7 @@ fastboot.exe flashing unlock
 12. The phone will unlock the bootloader and reboot back to the bootloader menu. This time, the bootloader will show a red warning icon and "unlocked" text.
 13. Now, reboot your phone back to the Android 12 OS. You can do this by sending the following fastboot command:
 ```
-fastboot reboot
+fastboot.exe reboot
 ```
 Congratulations, your Google Pixel 3 now has an unlocked bootloader! You'll see a warning message that your phone's bootloader is unlocked on every boot, but don't worry about that as it doesn't affect your day-to-day use. 
 
@@ -114,7 +114,7 @@ With an unlocked bootloader, you can now boot modified boot images. For Magisk t
 
 1. Since your device has been wiped, you'll need to go back and re-enable **Developer Options** and then re-enable **USB Debugging**. Make sure your Pixel 3 is still recognized by your PC.
 2. Install [Magisk]() on your device.
-3. Download the [factory zip]() for your build.
+3. Download the [Pixel 3 Factory Image (SP1A.210812.016.C1)](https://dl.google.com/dl/android/aosp/blueline-sp1a.210812.016.c1-factory-b41403db.zip) for your build.
 4. Inside the factory zip is the update zip: "**device-image-buildnumber.zip**". Open this, and extract ***boot.img***
 5. Copy **boot.img** to your device.
 ```
@@ -123,15 +123,15 @@ With an unlocked bootloader, you can now boot modified boot images. For Magisk t
 6. Patch **boot.img** with Magisk: "**Install**" > "**Select and Patch a File**"
 7. Copy the patched image back to your PC. It will be named "**magisk_patched-[random_strings].img**". Rename this to "***master boot.img***" and retain it for future updates.
 ```
-adb pull /sdcard/Download/magisk_patched_[random_strings].img
+adb.exe pull /sdcard/Download/magisk_patched_[random_strings].img
 ```
 8. Reboot your device to bootloader.
 ```
-
+adb.exe reboot bootloader
 ```
 9. Flash the patched image:
 ```
-fastboot.exe flash boot <drag and drop master root.img here>
+fastboot.exe flash boot <drag and drop master boot.img here>
 ```
 10. Reboot to Android. Open Magisk to confirm root - under Magisk at the top, you should see "Installed: <Magisk build number>"
 
@@ -148,12 +148,9 @@ fastboot.exe flash boot <drag and drop master root.img here>
 ```
 2. Backup your current kernel inside Twrp
 3. Download [Alynx-12-nethunter-bluecross.zip](https://github.com/V3rB0se/Alynx-Nethunter/releases/download/v4/Alynx-12-nethunter-bluecross.zip) for [STOCK ANDROID 12]
-4. Or use [Alynx-2.0-A12.zip]() for updated kernel. 
+4. Or use [Alynx-2.0-A12.zip](https://mega.nz/file/nIQTlZYT#GOzWmxygnQa-HX41EtLfJCybZvOdXPMUu3Yx64xYTgg) for updated kernel. 
 5. Flash the zip (Flashing the kernel/zip will **keep** root)
-```
-
-```
-6. Install Busybox
+6. Install [Busybox](https://play.google.com/store/apps/details?id=stericson.busybox&pcampaignid=web_share)
 7. Download [Wireless_firmware.zip](https://github.com/V3rB0se/Alynx-Nethunter/releases/download/v4/Wireless_firmware.zip) open **Magisk** and install the zip as ***Magisk module***
 8. Install [Nethunter store](https://store.nethunter.com/NetHunterStore.apk)
 9. Install Nethunter app & Nethunter terminal from Nethunter store
@@ -195,7 +192,7 @@ adb kill-server
 
 
 
-[Pixel 3 Factory Image (SP1A.210812.016.C1)](https://dl.google.com/dl/android/aosp/blueline-sp1a.210812.016.c1-factory-b41403db.zip)
+
 
 Root Checker by joeykrim
 
