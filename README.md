@@ -131,8 +131,9 @@ Root Checker by joeykrim
 https://flash.android.com/
 
 
+### Unroot
 
-
+https://www.youtube.com/watch?v=Khy6Mh_Q4jc
 
 
 
