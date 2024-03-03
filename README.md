@@ -215,3 +215,42 @@ If you're having trouble enabling OEM Unlocking, make sure:
 1. Your device is connected to the internet.
 2. Your device has checked in with Google, which may not be the case just because your device recently connected to the internet. To force a check in, enter **```*#*#CHECKIN#*#*```** (**```*#*#2432546#*#*```**) in the Dialer (no SIM required). After entering the number (no need to press call), the text disappears and a success notification appears.
 
+### Commands
+
+```
+adb.exe devices
+```
+```
+adb.exe reboot bootloader
+```
+```
+fastboot.exe devices
+```
+```
+fastboot.exe --slot=all flash bootloader "C:\platform-tools\bootloader-blueline-b1c1-0.4-7617406.img"
+```
+```
+fastboot.exe reboot bootloader
+```
+```
+fastboot.exe --slot=all flash radio "C:\platform-tools\radio-blueline-g845-00194-210812-b-7635520.img"
+```
+```
+fastboot.exe reboot bootloader
+```
+```
+fastboot.exe --slot=b --skip-reboot update "C:\platform-tools\image-blueline-sp1a.210812.016.c1.zip"
+```
+```
+fastboot.exe reboot bootloader
+```
+```
+fastboot.exe --slot=a --skip-reboot update "C:\platform-tools\image-blueline-sp1a.210812.016.c1.zip"
+```
+1. Enter Recovery Mode using fastbootd menu
+2. Wipe Data/Factory Reset
+3. Setup Phone skipping all security prompts
+```
+fastboot flashing lock
+```
+4. 
