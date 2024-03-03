@@ -6,6 +6,9 @@
     - [Pixel 3 Factory Images](https://developers.google.com/android/images#blueline)
     - [Magisk Stable](https://github.com/topjohnwu/Magisk/releases/)
     - [TWRP img file](https://twrp.me/google/googlepixel3.html)
+    - https://xdaforums.com/t/guide-pixel-3-blueline-unlock-bootloader-update-root-pass-safetynet.4366041/
+    - https://xdaforums.com/t/kernel-nethunter-for-pixel-3-and-pixel-3-xl-blueline-crosshatch.4456799/
+    - 
 
 ## Part 1 - Unlock the Google Pixel 3's Bootloader
 
