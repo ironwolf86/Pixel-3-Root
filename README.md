@@ -148,15 +148,15 @@ fastboot.exe boot twrp-3.7.1_12-0-blueline.img
 ```
 2. Backup your current kernel inside ***Twrp***
 3. Download [Alynx-12-nethunter-bluecross.zip](https://github.com/V3rB0se/Alynx-Nethunter/releases/download/v4/Alynx-12-nethunter-bluecross.zip) for [STOCK ANDROID 12]
-4. Or use [Alynx-2.0-A12.zip](https://mega.nz/file/nIQTlZYT#GOzWmxygnQa-HX41EtLfJCybZvOdXPMUu3Yx64xYTgg) for updated kernel. 
-5. Flash the zip (Flashing the kernel/zip will **keep** root)
-6. Install [Busybox](https://play.google.com/store/apps/details?id=stericson.busybox)
-7. Download [Wireless_firmware.zip](https://github.com/V3rB0se/Alynx-Nethunter/releases/download/v4/Wireless_firmware.zip) open **Magisk** and install the zip as ***Magisk module***
-8. Install [Nethunter store](https://store.nethunter.com/NetHunterStore.apk)
-9. Install **Nethunter app** & **Nethunter terminal** from *Nethunter store*
-10. Open *Nethunter app* & Download the full chroot kalifs within the app and let the app setup everything. After it finishes it'll start the chroot automatically.
-11. Update the sources with apt-get update && apt-get upgrade in the chroot using nethunter terminal
-12. Reboot the device
+    - Or use [Alynx-2.0-A12.zip](https://mega.nz/file/nIQTlZYT#GOzWmxygnQa-HX41EtLfJCybZvOdXPMUu3Yx64xYTgg) for updated kernel. 
+4. Flash the zip (Flashing the kernel/zip will **keep** root)
+5. Install [Busybox](https://play.google.com/store/apps/details?id=stericson.busybox)
+6. Download [Wireless_firmware.zip](https://github.com/V3rB0se/Alynx-Nethunter/releases/download/v4/Wireless_firmware.zip) open **Magisk** and install the zip as ***Magisk module***
+7. Install [Nethunter store](https://store.nethunter.com/NetHunterStore.apk)
+    - Install **Nethunter app** & **Nethunter terminal** from *Nethunter store*
+    - Open *Nethunter app* & Download the full chroot kalifs within the app and let the app setup everything. After it finishes it'll start the chroot automatically.
+8. Update the sources with apt-get update && apt-get upgrade in the chroot using nethunter terminal
+9. Reboot the device
 
 ***Note***: if nethunter app crashes open any android terminal in su environment and paste the following.
 
@@ -186,51 +186,27 @@ pm grant com.offsec.nethunter com.offsec.nhterm.permission.RUN_SCRIPT_NH
 pm grant com.offsec.nethunter com.offsec.nhterm.permission.RUN_SCRIPT_NH_LOGIN
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 adb kill-server
 
-
-
-
-
-Root Checker by joeykrim
-
+---
 
 
 https://flash.android.com/
 
 
-### Unroot
-
-https://www.youtube.com/watch?v=Khy6Mh_Q4jc
-
-
+### [Unroot](https://www.youtube.com/watch?v=Khy6Mh_Q4jc)
 
 Prepare your device
 
 Before you can flash a build to your device, you must prepare your device:
 
-    Enable Developer options and USB debugging.
-    Enable OEM Unlocking in the Developer options menu. If your bootloader is already unlocked, this option is grayed out with Bootloader is already unlocked.
+1. Enable Developer options and USB debugging.
+2. Enable OEM Unlocking in the Developer options menu. If your bootloader is already unlocked, this option is grayed out with Bootloader is already unlocked.
 
 If you're having trouble enabling OEM Unlocking, make sure:
 
-    Your device is connected to the internet.
-    Your device has checked in with Google, which may not be the case just because your device recently connected to the internet. To force a check in, enter *#*#CHECKIN#*#* (*#*#2432546#*#*) in the Dialer (no SIM required). After entering the number (no need to press call), the text disappears and a success notification appears.
+1. Your device is connected to the internet.
+2. Your device has checked in with Google, which may not be the case just because your device recently connected to the internet. To force a check in, enter **```*#*#CHECKIN#*#*```** (**```*#*#2432546#*#*```**) in the Dialer (no SIM required). After entering the number (no need to press call), the text disappears and a success notification appears.
 
