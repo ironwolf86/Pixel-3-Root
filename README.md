@@ -126,7 +126,7 @@ adb pull /sdcard/Download/magisk_patched_[random_strings].img
 
 Root Checker by joeykrim
 
-
+https://twrp.me/google/googlepixel3.html
 
 https://flash.android.com/
 
