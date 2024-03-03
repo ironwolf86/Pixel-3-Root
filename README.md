@@ -68,7 +68,9 @@ To install the **Google USB driver** on Windows 11 for the first time, do the fo
 ```
 adb.exe devices
 ```
-On your phone's screen, you should see a prompt to allow or deny USB Debugging access. Naturally, you will want to grant USB Debugging access when prompted (and tap the always allow check box if you never want to see that prompt again).
+- On your phone's screen, you should see a prompt to allow or deny USB Debugging access. Naturally, you will want to grant USB Debugging access when prompted (and tap the always allow check box if you never want to see that prompt again). If you don't see a device, make sure USB Debugging is enabled, reconnect the USB cable, or try a different USB cable.
+    - If you see "unauthorized", you need to authorize the connection on your device.
+    - If you see the device without "unauthorized", you're good to go.
 
 4. Finally, in the Command Prompt window re-enter:
 ```
