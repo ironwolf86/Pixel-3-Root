@@ -10,41 +10,43 @@
 
 ## Part 1 - Unlock the Google Pixel 3's Bootloader
 
-1. Open the `Settings` app.
-2. Go to `About phone`.
-3. Scroll down and tap on `Build number` 7 times until it says you're now a developer.
-
-![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-1.jpg)
-
-5. Go back to `Settings` home page and near the bottom of the list, you should see `System`. 
-6. Under `System` near the bottom of the list tap `Developer options.`
-7. Without scrolling down, you should see an `OEM unlocking` option. Enable it. For security purposes, it may ask you to input your lock screen PIN/password if you have one set.
-
-![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-3.jpg)
-
-9. Scroll down a bit until you see `USB debugging`. Enable it.
-
-![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-4.jpg)
-
-10. Plug in your Pixel 3 into your PC using a USB to UsC-C data cable. Change the USB mode to “file transfer (MTP)” mode. Some OEMs may or may not require this, but it's best to just leave it in this mode for general compatibility. 
-
 ---
 
-Install the Google USB driver
+### Install the Google USB driver
 
-Windows 11
+**Windows 11**
 
-To install the Google USB driver on Windows 11 for the first time, do the following:
+To install the **Google USB driver** on Windows 11 for the first time, do the following:
 
-1. [Download](https://dl.google.com/android/repository/usb_driver_r13-windows.zip) and extract files to platform-tools.
+1. [Download](https://dl.google.com/android/repository/usb_driver_r13-windows.zip) and extract files to ***platform-tools***.
 2. Connect your Android device to your computer's USB port.
 3. From Windows Explorer, open *Computer Management*.
 4. In the *Computer Management* left pane, select *Device Manager*.
 5. In the *Device Manager* right pane, locate and expand **Portable Devices** or **Other Devices**, depending on which one you see.
 6. Right-click the name of the device you connected, and then select *Update Driver Software*.
 7. In the Hardware Update wizard, select *Browse my computer for driver software* and click *Next*.
-8. Click Browse and then locate the USB driver folder. For example, the Google USB Driver is located in android_sdk\extras\google\usb_driver\.
+8. Click Browse and then locate the USB driver folder. For example, the Google USB Driver is located in ***platform-tools\usb_driver\***.
 9. Click Next to install the driver.
+
+---
+
+1. Open the **Settings** app.
+    - Go to **About phone**.
+    - Scroll down and tap on ***Build number*** seven times until it says you're now a developer.
+
+![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-1.jpg)
+
+2. Go back to **Settings** home page and near the bottom of the list, you should see **System**. 
+    - Under **System** near the bottom of the list tap **Developer options**.
+3. Without scrolling down, you should see an ***OEM unlocking*** option. **Enable** it. For security purposes, it may ask you to input your lock screen PIN/password if you have one set.
+
+![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-3.jpg)
+
+4. Scroll down a bit until you see ***USB debugging***. **Enable** it.
+
+![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-4.jpg)
+
+10. Plug in your Pixel 3 into your PC using a USB to UsC-C data cable. Change the USB mode to “file transfer (MTP)” mode. Some OEMs may or may not require this, but it's best to just leave it in this mode for general compatibility. 
 
 ---
 
