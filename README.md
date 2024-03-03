@@ -131,7 +131,7 @@ Installation:
     Flash the zip (Flashing the kernel/zip will keep root)
     Install Busybox
     Download Wireless_firmware.zip open Magisk and install the zip as Magisk module
-    Install Nethunter store
+    Install [Nethunter store](https://store.nethunter.com/NetHunterStore.apk)
     Install Nethunter app & Nethunter terminal from Nethunter store
     Open Nethunter app & Download the full chroot kalifs within the app and let the app setup everything. After it finishes it'll start the chroot automatically.
     Update the sources with apt-get update && apt-get upgrade in the chroot using nethunter terminal
