@@ -193,10 +193,6 @@ pm grant com.offsec.nethunter com.offsec.nhterm.permission.RUN_SCRIPT_NH_LOGIN
 
 ---
 
-adb kill-server
-
----
-
 ### [Unroot](https://www.youtube.com/watch?v=Khy6Mh_Q4jc)
 
 **Prepare your device**
@@ -262,4 +258,18 @@ fastboot.exe devices
 ```
 fastboot.exe flashing lock
 ```
-4. https://flash.android.com/
+5. Or use this command and goto step 6 in Edge Browser
+```
+adb.exe kill-server
+```
+6. https://flash.android.com/
+
+
+
+
+
+
+
+
+
+
