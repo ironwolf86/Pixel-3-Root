@@ -92,7 +92,7 @@ adb.exe reboot edl
 ```
 adb.exe reboot bootloader
 ```
-10. Once you're on the bootloader menu, you'll now have to switch to using fastboot command to communicate with your device. To unlock the Pixel 3's bootloader, enter the following command:
+10. Once you're on the bootloader menu, you'll now have to switch to using fastboot command to communicate with your device. To unlock the Pixel 3's bootloader, enter the following command: -***THIS WILL WIPE YOUR DEVICE!!***
 ```
 fastboot.exe flashing unlock     
 ```
