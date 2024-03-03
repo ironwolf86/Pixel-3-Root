@@ -134,6 +134,7 @@ adb.exe reboot bootloader
 fastboot.exe flash boot "master boot.img"
 ```
 10. Reboot to Android. Open Magisk to confirm root - under Magisk at the top, you should see "Installed: <Magisk build number>"
+11. [Root Checker](https://play.google.com/store/apps/details?id=com.joeykrim.rootcheck) by joeykrim can also be used to verify root priviledges.
 
 ---
 
@@ -144,13 +145,13 @@ fastboot.exe flash boot "master boot.img"
 **Installation**:
 1. Boot the device into [Twrp recovery](https://dl.twrp.me/blueline/twrp-3.7.1_12-0-blueline.img).
 ```
-fastboot boot path/to/twrp.img
+fastboot.exe boot path/to/twrp.img
 ```
 2. Backup your current kernel inside **Twrp**
 3. Download [Alynx-12-nethunter-bluecross.zip](https://github.com/V3rB0se/Alynx-Nethunter/releases/download/v4/Alynx-12-nethunter-bluecross.zip) for [STOCK ANDROID 12]
 4. Or use [Alynx-2.0-A12.zip](https://mega.nz/file/nIQTlZYT#GOzWmxygnQa-HX41EtLfJCybZvOdXPMUu3Yx64xYTgg) for updated kernel. 
 5. Flash the zip (Flashing the kernel/zip will **keep** root)
-6. Install [Busybox](https://play.google.com/store/apps/details?id=stericson.busybox&pcampaignid=web_share)
+6. Install [Busybox](https://play.google.com/store/apps/details?id=stericson.busybox)
 7. Download [Wireless_firmware.zip](https://github.com/V3rB0se/Alynx-Nethunter/releases/download/v4/Wireless_firmware.zip) open **Magisk** and install the zip as ***Magisk module***
 8. Install [Nethunter store](https://store.nethunter.com/NetHunterStore.apk)
 9. Install **Nethunter app** & **Nethunter terminal** from *Nethunter store*
