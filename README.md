@@ -5,8 +5,8 @@
     - [Google USB Driver installed](https://developer.android.com/studio/run/win-usb)
     - [Pixel 3 Factory Images](https://developers.google.com/android/images#blueline)
     - [Magisk Stable](https://github.com/topjohnwu/Magisk/releases/)
-    - [TWRP img and zip files](https://dl.twrp.me/blueline/)
-    - []()    
+    - [TWRP img file](https://twrp.me/google/googlepixel3.html)
+    - []()
 
 ## Part 1 - Unlock the Google Pixel 3's Bootloader
 
@@ -115,8 +115,8 @@ With an unlocked bootloader, you can now boot modified boot images. For Magisk t
 1. Since your device has been wiped, you'll need to go back and re-enable **Developer Options** and then re-enable **USB Debugging**. Make sure your Pixel 3 is still recognized by your PC.
 2. Install [Magisk](https://github.com/topjohnwu/Magisk/releases/download/v27.0/Magisk-v27.0.apk) on your device.
 3. Download the [Pixel 3 Factory Image (SP1A.210812.016.C1)](https://dl.google.com/dl/android/aosp/blueline-sp1a.210812.016.c1-factory-b41403db.zip) for your build.
-4. Inside the factory zip is the update zip: "**device-image-buildnumber.zip**". Open this, and extract ***boot.img***
-5. Copy **boot.img** to your soon to be rooted device.
+4. Inside the factory zip is the update zip: "**device-image-buildnumber.zip**". Open this, and extract "***boot.img***"
+5. Copy "**boot.img**" to your soon to be rooted device.
 ```
 abd.exe push boot.img /sdcard/Download
 ```
@@ -142,7 +142,7 @@ fastboot.exe flash boot "master boot.img"
 ***warning***: please do not update magisk after flashing the kernel, you can update magisk **before** flashing the kernel.
 
 **Installation**:
-1. Boot the device into Twrp recovery.
+1. Boot the device into [Twrp recovery](https://dl.twrp.me/blueline/twrp-3.7.1_12-0-blueline.img).
 ```
 fastboot boot path/to/twrp.img
 ```
@@ -196,7 +196,7 @@ adb kill-server
 
 Root Checker by joeykrim
 
-https://twrp.me/google/googlepixel3.html
+
 
 https://flash.android.com/
 
