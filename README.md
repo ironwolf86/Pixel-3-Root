@@ -197,13 +197,9 @@ adb kill-server
 
 ---
 
-
-https://flash.android.com/
-
-
 ### [Unroot](https://www.youtube.com/watch?v=Khy6Mh_Q4jc)
 
-Prepare your device
+**Prepare your device**
 
 Before you can flash a build to your device, you must prepare your device:
 
@@ -233,10 +229,16 @@ fastboot.exe --slot=all flash bootloader "C:\platform-tools\bootloader-blueline-
 fastboot.exe reboot bootloader
 ```
 ```
+fastboot.exe devices
+```
+```
 fastboot.exe --slot=all flash radio "C:\platform-tools\radio-blueline-g845-00194-210812-b-7635520.img"
 ```
 ```
 fastboot.exe reboot bootloader
+```
+```
+fastboot.exe devices
 ```
 ```
 fastboot.exe --slot=b --skip-reboot update "C:\platform-tools\image-blueline-sp1a.210812.016.c1.zip"
@@ -245,12 +247,19 @@ fastboot.exe --slot=b --skip-reboot update "C:\platform-tools\image-blueline-sp1
 fastboot.exe reboot bootloader
 ```
 ```
+fastboot.exe devices
+```
+```
 fastboot.exe --slot=a --skip-reboot update "C:\platform-tools\image-blueline-sp1a.210812.016.c1.zip"
 ```
-1. Enter Recovery Mode using fastbootd menu
-2. Wipe Data/Factory Reset
-3. Setup Phone skipping all security prompts
+1. Enter Recovery Mode using fastbootd menu.
+2. Wipe Data/Factory Reset.
+3. Setup Phone skipping all security prompts.
+4. Use volume down + power key to enter fastboot while phone is off.
 ```
-fastboot flashing lock
+fastboot.exe devices
 ```
-4. 
+```
+fastboot.exe flashing lock
+```
+4. https://flash.android.com/
