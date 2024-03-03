@@ -118,6 +118,55 @@ With an unlocked bootloader, you can now boot modified boot images. For Magisk t
 
 
 
+
+
+
+warning: please do not update magisk after flashing the kernel, you can update the magisk before flashing the kernel.
+
+Installation:
+
+    Boot the device into Twrp recovery .
+    Backup your current kernel inside Twrp
+    Download Alynx-12L.zip if you're using Android 12L PixelDust or CAF rom else download Alynx-12-nethunter-bluecross.zip for [STOCK/ PIXELDUST CAF ANDROID 12 ]
+    Flash the zip (Flashing the kernel/zip will keep root)
+    Install Busybox
+    Download Wireless_firmware.zip open Magisk and install the zip as Magisk module
+    Install Nethunter store
+    Install Nethunter app & Nethunter terminal from Nethunter store
+    Open Nethunter app & Download the full chroot kalifs within the app and let the app setup everything. After it finishes it'll start the chroot automatically.
+    Update the sources with apt-get update && apt-get upgrade in the chroot using nethunter terminal
+    Reboot the device
+
+Note: if nethunter app crashes open any android terminal in su environment and paste the following.
+
+Code:
+
+pm grant com.offsec.nethunter android.permission.ACCESS_FINE_LOCATION
+pm grant com.offsec.nethunter android.permission.ACCESS_COARSE_LOCATION
+pm grant com.offsec.nethunter android.permission.READ_EXTERNAL_STORAGE
+pm grant com.offsec.nethunter android.permission.WRITE_EXTERNAL_STORAGE
+pm grant com.offsec.nethunter com.offsec.nhterm.permission.RUN_SCRIPT
+pm grant com.offsec.nethunter com.offsec.nhterm.permission.RUN_SCRIPT_SU
+pm grant com.offsec.nethunter com.offsec.nhterm.permission.RUN_SCRIPT_NH
+pm grant com.offsec.nethunter com.offsec.nhterm.permission.RUN_SCRIPT_NH_LOGIN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 adb kill-server
 
 adb pull /sdcard/Download/magisk_patched_[random_strings].img
