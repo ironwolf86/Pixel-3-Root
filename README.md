@@ -1,12 +1,11 @@
 # Pixel-3-(blueline)-Root
 
 - Prerequisites:
-    - [Latest SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads) - if Platform Tools is out of date, you WILL run into problems!
+    - [Latest SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads) - if Platform Tools is out of date, you **WILL** run into problems!
     - [Google USB Driver installed](https://developer.android.com/studio/run/win-usb)
     - [Pixel 3 Factory Images](https://developers.google.com/android/images#blueline)
     - [Magisk Stable](https://github.com/topjohnwu/Magisk/releases/)
     - [TWRP img file](https://twrp.me/google/googlepixel3.html)
-    - []()
 
 ## Part 1 - Unlock the Google Pixel 3's Bootloader
 
@@ -52,12 +51,12 @@ To install the **Google USB driver** on Windows 11 for the first time, do the fo
 1. Download the latest [Google USB Driver](https://dl.google.com/android/repository/usb_driver_r13-windows.zip) and extract files to ***platform-tools***.
 2. Connect your Android device to your computer's USB port.
 3. From Windows Explorer, open **Computer Management**.
-4. In the **Computer Management** left pane, select **Device Manager**.
-5. In the **Device Manager** right pane, locate and expand **Portable Devices** or **Other Devices**, depending on which one you see.
-6. Right-click the name of the device you connected, and then select **Update Driver Software**.
-7. In the **Hardware Update wizard**, select **Browse my computer for driver software** and click **Next**.
-8. Click **Browse** and then locate the USB driver folder. For example, the Google USB Driver is located in ***C:\platform-tools\usb_driver\***.
-9. Click **Next** to install the driver.
+4. In the **Computer Management** left pane, select ***Device Manager***.
+5. In the ***Device Manager*** right pane, locate and expand "***Portable Devices***" or "***Other Devices***", depending on which one you see.
+6. Right-click the name of the device you connected, and then select ***Update Driver Software***.
+7. In the **Hardware Update wizard**, select ***Browse my computer for driver software*** and click "**Next**".
+8. Click "**Browse**" and then locate the USB driver folder. For example, the Google USB Driver is located in ***C:\platform-tools\usb_driver\***.
+9. Click "**Next**" to install the driver.
 
 ---
 
@@ -145,9 +144,9 @@ fastboot.exe flash boot "master boot.img"
 **Installation**:
 1. Boot the device into [Twrp recovery](https://dl.twrp.me/blueline/twrp-3.7.1_12-0-blueline.img).
 ```
-fastboot.exe boot path/to/twrp.img
+fastboot.exe boot twrp-3.7.1_12-0-blueline.img
 ```
-2. Backup your current kernel inside **Twrp**
+2. Backup your current kernel inside ***Twrp***
 3. Download [Alynx-12-nethunter-bluecross.zip](https://github.com/V3rB0se/Alynx-Nethunter/releases/download/v4/Alynx-12-nethunter-bluecross.zip) for [STOCK ANDROID 12]
 4. Or use [Alynx-2.0-A12.zip](https://mega.nz/file/nIQTlZYT#GOzWmxygnQa-HX41EtLfJCybZvOdXPMUu3Yx64xYTgg) for updated kernel. 
 5. Flash the zip (Flashing the kernel/zip will **keep** root)
@@ -161,16 +160,31 @@ fastboot.exe boot path/to/twrp.img
 
 ***Note***: if nethunter app crashes open any android terminal in su environment and paste the following.
 
-Code:
-
+**Code**:
+```
 pm grant com.offsec.nethunter android.permission.ACCESS_FINE_LOCATION
+```
+```
 pm grant com.offsec.nethunter android.permission.ACCESS_COARSE_LOCATION
+```
+```
 pm grant com.offsec.nethunter android.permission.READ_EXTERNAL_STORAGE
+```
+```
 pm grant com.offsec.nethunter android.permission.WRITE_EXTERNAL_STORAGE
+```
+```
 pm grant com.offsec.nethunter com.offsec.nhterm.permission.RUN_SCRIPT
+```
+```
 pm grant com.offsec.nethunter com.offsec.nhterm.permission.RUN_SCRIPT_SU
+```
+```
 pm grant com.offsec.nethunter com.offsec.nhterm.permission.RUN_SCRIPT_NH
+```
+```
 pm grant com.offsec.nethunter com.offsec.nhterm.permission.RUN_SCRIPT_NH_LOGIN
+```
 
 
 
