@@ -4,8 +4,8 @@
     - [Latest SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads) - if Platform Tools is out of date, you WILL run into problems!
     - [Google USB Driver installed](https://developer.android.com/studio/run/win-usb)
     - [Pixel 3 Factory Image (SP1A.210812.016.C1)](https://dl.google.com/dl/android/aosp/blueline-sp1a.210812.016.c1-factory-b41403db.zip)
-    - [Magisk Stable](https://github.com/topjohnwu/Magisk/releases/download/v27.0/Magisk-v27.0.apk)
-    - []()
+    - [Magisk Stable](https://github.com/topjohnwu/Magisk/releases/)
+    - [TWRP img and zip files](https://dl.twrp.me/blueline/)
     - []()    
 
 ## Part 1 - Unlock the Google Pixel 3's Bootloader
