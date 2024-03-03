@@ -30,6 +30,24 @@
 
 ---
 
+Install the Google USB driver
+
+Windows 11
+
+To install the Google USB driver on Windows 11 for the first time, do the following:
+
+1. [Download](https://dl.google.com/android/repository/usb_driver_r13-windows.zip) and extract files to platform-tools.
+2. Connect your Android device to your computer's USB port.
+3. From Windows Explorer, open *Computer Management*.
+4. In the *Computer Management* left pane, select *Device Manager*.
+5. In the *Device Manager* right pane, locate and expand **Portable Devices** or **Other Devices**, depending on which one you see.
+6. Right-click the name of the device you connected, and then select *Update Driver Software*.
+7. In the Hardware Update wizard, select *Browse my computer for driver software* and click *Next*.
+8. Click Browse and then locate the USB driver folder. For example, the Google USB Driver is located in android_sdk\extras\google\usb_driver\.
+9. Click Next to install the driver.
+
+---
+
 1. Download the latest [Android SDK Platform Tools ZIP file for Windows.](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
 2. Extract the contents of this ZIP file into an easily accessible folder (such as C:\platform-tools). 
 3. Open File Explorer and browse to where you extracted the contents of this ZIP file. 
@@ -89,6 +107,10 @@ With an unlocked bootloader, you can now boot modified boot images. For Magisk t
 
 
 
+adb pull /sdcard/Download/magisk_patched_[random_strings].img
 
+https://dl.google.com/android/repository/usb_driver_r13-windows.zip
 
+https://developers.google.com/android/images#blueline
 
+Root Checker by joeykrim
