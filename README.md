@@ -12,6 +12,28 @@
 
 ---
 
+### On Pixel 3 Device
+
+1. Open the **Settings** app.
+    - Go to **About phone**.
+    - Scroll down and tap on ***Build number*** seven times until it says you're now a developer.
+
+![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-1.jpg)
+
+2. Go back to **Settings** home page and near the bottom of the list, you should see **System**. 
+    - Under **System** near the bottom of the list tap **Developer options**.
+3. Without scrolling down, you should see an ***OEM unlocking*** option. **Enable** it. For security purposes, it may ask you to input your lock screen PIN/password if you have one set.
+
+![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-3.jpg)
+
+4. Scroll down a bit until you see ***USB debugging***. **Enable** it.
+
+![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-4.jpg)
+
+5. Plug in your Pixel 3 into your PC using a USB to UsC-C data cable. Change the USB mode to “file transfer (MTP)” mode. Some OEMs may or may not require this, but it's best to just leave it in this mode for general compatibility.
+
+---
+
 ### Install the SDK platform tools
 
 **Windows 11**
@@ -36,28 +58,6 @@ To install the **Google USB driver** on Windows 11 for the first time, do the fo
 7. In the **Hardware Update wizard**, select **Browse my computer for driver software** and click **Next**.
 8. Click **Browse** and then locate the USB driver folder. For example, the Google USB Driver is located in ***C:\platform-tools\usb_driver\***.
 9. Click **Next** to install the driver.
-
----
-
-### On Pixel 3 Device
-
-1. Open the **Settings** app.
-    - Go to **About phone**.
-    - Scroll down and tap on ***Build number*** seven times until it says you're now a developer.
-
-![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-1.jpg)
-
-2. Go back to **Settings** home page and near the bottom of the list, you should see **System**. 
-    - Under **System** near the bottom of the list tap **Developer options**.
-3. Without scrolling down, you should see an ***OEM unlocking*** option. **Enable** it. For security purposes, it may ask you to input your lock screen PIN/password if you have one set.
-
-![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-3.jpg)
-
-4. Scroll down a bit until you see ***USB debugging***. **Enable** it.
-
-![](https://github.com/ironwolf86/Pixel-3-Root/blob/main/media/Google-Pixel-3-XL-Unlock-Bootloader-Step-4.jpg)
-
-5. Plug in your Pixel 3 into your PC using a USB to UsC-C data cable. Change the USB mode to “file transfer (MTP)” mode. Some OEMs may or may not require this, but it's best to just leave it in this mode for general compatibility.
 
 ---
 
@@ -118,10 +118,33 @@ With an unlocked bootloader, you can now boot modified boot images. For Magisk t
 
 
 
-
+adb kill-server
 
 adb pull /sdcard/Download/magisk_patched_[random_strings].img
 
 [Pixel 3 Factory Image (SP1A.210812.016.C1)](https://dl.google.com/dl/android/aosp/blueline-sp1a.210812.016.c1-factory-b41403db.zip)
 
 Root Checker by joeykrim
+
+
+
+https://flash.android.com/
+
+
+
+
+
+
+
+Prepare your device
+
+Before you can flash a build to your device, you must prepare your device:
+
+    Enable Developer options and USB debugging.
+    Enable OEM Unlocking in the Developer options menu. If your bootloader is already unlocked, this option is grayed out with Bootloader is already unlocked.
+
+If you're having trouble enabling OEM Unlocking, make sure:
+
+    Your device is connected to the internet.
+    Your device has checked in with Google, which may not be the case just because your device recently connected to the internet. To force a check in, enter *#*#CHECKIN#*#* (*#*#2432546#*#*) in the Dialer (no SIM required). After entering the number (no need to press call), the text disappears and a success notification appears.
+
