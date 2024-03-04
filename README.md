@@ -147,21 +147,18 @@ fastboot.exe flash boot "master boot.img"
 ***warning***: please do not update magisk after flashing the kernel, you can update magisk **before** flashing the kernel.
 
 **Installation**:
-1. Boot the device into [Twrp recovery](https://dl.twrp.me/blueline/twrp-3.7.1_12-0-blueline.img).
+1. Boot the device into [Twrp recovery](https://dl.twrp.me/blueline/twrp-3.7.0_12-0-blueline.img).
 ```
-fastboot.exe boot twrp-3.7.1_12-0-blueline.img
+fastboot.exe boot twrp-3.7.0_12-0-blueline.img
 ```
-2. Backup your current kernel inside ***Twrp***
-3. Download [Alynx-12-nethunter-bluecross.zip](https://github.com/V3rB0se/Alynx-Nethunter/releases/download/v4/Alynx-12-nethunter-bluecross.zip) for [STOCK ANDROID 12]
-    - Or use [Alynx-2.0-A12.zip](https://mega.nz/file/nIQTlZYT#GOzWmxygnQa-HX41EtLfJCybZvOdXPMUu3Yx64xYTgg) for updated kernel. 
-4. Flash the zip (Flashing the kernel/zip will **keep** root)
-5. Install [Busybox](https://play.google.com/store/apps/details?id=stericson.busybox)
-6. Download [Wireless_firmware.zip](https://github.com/V3rB0se/Alynx-Nethunter/releases/download/v4/Wireless_firmware.zip) open **Magisk** and install the zip as ***Magisk module***
-7. Install [Nethunter store](https://store.nethunter.com/NetHunterStore.apk)
+2. Download [Alynx-2.0-A12.zip](https://mega.nz/file/nIQTlZYT#GOzWmxygnQa-HX41EtLfJCybZvOdXPMUu3Yx64xYTgg) for updated nethunter kernel [STOCK ANDROID 12]
+3. Flash the zip (Flashing the kernel/zip will **keep** root)
+5. Download [Wireless_firmware.zip](https://github.com/V3rB0se/Alynx-Nethunter/releases/download/v4/Wireless_firmware.zip) open **Magisk** and install the zip as ***Magisk module***
+6. Install [Nethunter store](https://store.nethunter.com/NetHunterStore.apk)
     - Install **Nethunter app** & **Nethunter terminal** from *Nethunter store*
     - Open *Nethunter app* & Download the full chroot kalifs within the app and let the app setup everything. After it finishes it'll start the chroot automatically.
-8. Update the sources with apt-get update && apt-get upgrade in the chroot using nethunter terminal
-9. Reboot the device
+7. Update the sources with apt-get update && apt-get upgrade in the chroot using nethunter terminal
+8. Reboot the device
 
 ***Note***: if nethunter app crashes open any android terminal in su environment and paste the following.
 
