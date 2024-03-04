@@ -156,7 +156,7 @@ fastboot.exe boot twrp-3.7.0_12-0-blueline.img
 5. Download [Wireless_firmware.zip](https://github.com/V3rB0se/Alynx-Nethunter/releases/download/v4/Wireless_firmware.zip) open **Magisk** and install the zip as ***Magisk module***
 6. Install [Nethunter store](https://store.nethunter.com/NetHunterStore.apk)
     - Install **Nethunter app** & **Nethunter terminal** from *Nethunter store*
-    - Open *Nethunter app* & Download the full chroot kalifs within the app and let the app setup everything. After it finishes it'll start the chroot automatically.
+    - Open *Nethunter app* & Download the full chroot [kalifs](https://build.nethunter.com/kalifs/kalifs-latest/kalifs-arm64-full.tar.xz) within the app and let the app setup everything. After it finishes it'll start the chroot automatically.
 7. Update the sources with apt-get update && apt-get upgrade in the chroot using nethunter terminal
 8. Reboot the device
 
